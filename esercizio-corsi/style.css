@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b090a;
+    color:#f5f3f4;
+}
+
+/********* STILE HEADER **********/
+header {
+    /* height: 20%; */
+    width: 100%;
+    background-color: #ba181b;
+}
+nav {
+    display: flex;
+}
+nav > div {
+    margin: 1em;
+    width: 50%;
+}
+nav .log{
+    max-width: 30%;
+}
+nav .logo img{
+    height: auto;
+    width: 15%;
+}
+nav .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .navigation ul {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: auto 3em;
+    justify-content: space-evenly;
+}
+nav ul li {
+    list-style-type:none;
+}
+nav li a {
+    color: #161a1d;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color:#f5f3f4
+}
+nav li.attivo:hover {
+    cursor: pointer;
+}
+
+/********* STILE MAIN **********/
+
+main {
+    height: 90vh;
+    width: 60vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main h1 {
+    margin-bottom: 0.5em;
+}
+
+main .contenitore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #161a1d;
+    width: 80%;
+    height: 40vh;
+    border-radius: 1em;
+    border: 1px solid #d3d3d3;
+}
+main .contenitore .riga {
+    padding: 0.8em 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.riga label {
+    margin-bottom: 0.5em;
+}
+.riga input {
+    padding: 0.8em;
+    padding-right: 2.5em;
+    background-color: #0b090a;
+    color: #f5f3f4;
+    border: none;
+    border-radius: 0.5em;
+    outline: 1px solid #d3d3d3;
+    
+}
+.riga input:focus {
+    outline: 2px solid #0d6efd;
+    border:1px solid  #0d6efd;
+    
+}
+
+.riga button {
+    padding: 0.8em;
+    color: #f5f3f4;
+    background-color: #198754;
+    border-radius: 0.5em;
+    border: none;
+}
+.riga button:hover {
+    outline: 1px solid #f5f3f4;
+    cursor: pointer;
+} 
+.riga p {
+    color : #dc3545;
+    margin-top: 0.5em;
+    font-size: 0.8rem;
+}
+main .progress {
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+main .progress h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+main .progress #bar {
+    margin-left: 2em;
+    width: 1px;
+    height: 40px;
+    background-color: #198754;
+} 
