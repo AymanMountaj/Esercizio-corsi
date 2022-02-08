@@ -137,19 +137,19 @@ corsoBtn.addEventListener('click', function(){
     document.getElementById('errore-combo1').innerHTML = '';
     newCorso.argomento1 = argomenti[argomentoPrimo - 1];
   }
-  if(argomentoSecondo == undefined){
-    newCorso.argomento2 = argomenti[argomentoSecondo - 1];
+  if(argomentoSecondo == 0){
+      newCorso.argomento2 = '';
   } else {
-    newCorso.argomento2 = '';
+    newCorso.argomento2 = argomenti[argomentoSecondo - 1]
   }
-  if(argomentoTerzo == undefined){
-    newCorso.argomento3 = argomenti[argomentoTerzo - 1];
+  if(argomentoTerzo == 0){
+      newCorso.argomento3 = '';
+    
   } else {
-    newCorso.argomento3 = '';
+    newCorso.argomento3 = argomenti[argomentoTerzo - 1];
   }
 
-  /* newCorso.argomento2 = argomenti[argomentoSecondo - 1];
-  newCorso.argomento3 = argomenti[argomentoTerzo - 1]; */
+  
   newCorso.argomento4 = '';
   newCorso.argomento5 = '';
   if(semaforo == true){
